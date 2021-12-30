@@ -1,0 +1,41 @@
+/* 
+Problem Statement
+You have x number of $5 notes and y number of $1 notes. You want to purchase an item for amount z. The shopkeeper wants you to provide exact change. You want to pay using a minimum number of notes. How many $5 notes and $1 notes will you use?
+
+Implement a program to find out how many $5 notes and $1 notes will be used. If an exact change is not possible, then display -1.*/
+
+
+
+
+
+
+import java.util.Scanner;
+
+public class ass6 {
+    public static void main(String[]args){
+        Scanner input=new Scanner(System.in);
+        System.out.println("enter the amount");
+        int amount=input.nextInt();
+        System.out.println("enter the $1 available");
+        int one=input.nextInt();
+        System.out.println("$5 available");
+        int five=input.nextInt();
+
+            int y =amount/5;
+
+            int x=amount-y*5;
+           // System.out.println("$1 notes will be used"+y);
+       // System.out.println(" $5 notes will be used="+x);
+
+        if(x<=one &&y<=five){
+            System.out.println(  "$1 notes will be used"+x);
+            System.out.println( " $5 notes will be used="+y);
+            System.out.println(  "purchase amount is ="+amount);
+
+        }
+        else
+            System.out.println("-1");
+
+        }
+    }
+
