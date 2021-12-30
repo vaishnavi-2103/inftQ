@@ -1,0 +1,21 @@
+/*Implement a program to calculate the Simple Interest by using the formula given below and display the calculated Simple Interest.
+
+Simple Interest = (principal*rate of interest*time)/100 */
+
+//code
+//import java.util.Scanner;
+  class Tester {
+	public static void main(String[] args) {
+		// Implement your code here 
+		//Scanner input=new Scanner(System.in);
+        //  System.out.println("enter the principal");
+          int p=5000;
+		// System.out.println("enter the rate");
+		 int r=10;
+		 // System.out.println("enter the time");
+		  int t=5;
+		  
+		  double si=(p*r*t)/100;
+		  System.out.println(si);
+	}
+}
