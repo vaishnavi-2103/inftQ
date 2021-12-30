@@ -1,0 +1,33 @@
+/*Problem Statement
+Implement a program to check whether a given number is a palindrome.
+
+Palindrome is a sequence that reads the same backwards as forwards.
+
+E.g.: 121, 1331, 2332, 78900987, 123456654321,  etc.*/
+
+ 
+
+
+class Tester {
+	public static void main(String[] args) {
+	    
+	    int num=121;
+	    int s=0;
+	    int temp,r;
+	    temp=num;
+	    while(num!=0){
+	        r=num%10;
+	        s=s*10+r;
+	        num=num/10;
+	    }
+	        if(s==temp){
+	            System.out.println(s+ "  its is a palindrome");
+	        }
+	        else{
+	            System.out.println(s+ "not a palindrome");
+	        }
+	    }
+		// Implement your code here 
+	
+}
+
