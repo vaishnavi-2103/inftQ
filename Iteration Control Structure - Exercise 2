@@ -1,0 +1,23 @@
+/*Implement a program to display the geometric sequence as given below for a given value n, where n is the number of elements in the sequence.
+
+1, 2, 4, 8, 16, 32, 64, ......, 1024*/
+
+class Tester {
+	public static void main(String[] args) {
+	    int i,a=1;
+	    int num=32;
+		// Implement your code here 
+		for (i=1;i<=num;i++){
+		    System.out.print(a +",");
+		     i=a;
+	
+		    a=a*2;
+		  
+		    
+		} 
+	
+	}
+}
+
+
+ 
