@@ -1,0 +1,40 @@
+/*Problem Statement
+Implement a program to check whether a given number is an Armstrong number.
+
+An Armstrong number is an n-digit number that is equal to the sum of the nth powers of its individual digits.
+
+E.g.: 371 is an Armstrong number as 33 + 73 + 13=371
+
+        1634 is an Armstrong number as 14 + 64 + 34+ 44=1634
+
+Hint
+
+Use Math.pow(double a, double b) method to calculate the power of a number */
+
+import java.util.Scanner;
+import java.math.*;
+
+public class iass5{
+    public static void main(String[]args){
+        Scanner in=new Scanner(System.in);
+        System.out.println("enter the number");
+        int num=in.nextInt();
+        int r,s=0;
+        int temp=num;
+        while(num!=0){
+            r=num%10;
+            int p= (int) Math.pow(r,3);
+            s=s+p;
+            num=num/10;
+        }
+        //System.out.println(s);
+if(temp==s){
+    System.out.println(temp +"its a armstrong number");
+}
+else
+{
+    System.out.println(temp+" is not a armstrong");
+}
+
+    }
+}
