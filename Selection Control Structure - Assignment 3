@@ -1,0 +1,34 @@
+/* Problem Statement
+Implement a program to calculate the product of three positive integer values. However, if one of the integers is 7, consider only the values to the right of 7 for calculation. If 7 is the last integer, then display -1.
+
+Note: Only one of the three values can be 7.*/
+
+//import java.util.Scanner;
+class Tester {
+	public static void main(String[] args) {
+	//    Scanner in =new Scanner(System.in);
+	    int first=7;
+	    int second=6;
+	    int third=8;
+	    //nextInt();
+	    if(first==7){
+	        int result=second*third;
+	        System.out.println(result);
+	    }
+	    else if(second==7){
+	        System.out.println(third);
+	    }
+	    else if(third==7){
+	        System.out.println("-1");
+	    }
+	    else{
+	   int res=first*second*third;
+	   System.out.println(res);
+	    }
+		// Implement your code here 
+	}
+}
+
+
+
+ 
