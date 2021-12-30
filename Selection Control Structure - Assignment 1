@@ -1,0 +1,25 @@
+/*roblem Statement
+Implement a program to display the sum of two given numbers if the numbers are same. If the numbers are not same, display the double of the sum.
+*/
+
+
+
+
+
+class Tester {
+	public static void main(String[] args) {
+	  int  num1=6,num2=5;
+	   int sum=0;
+	   sum=num1+num2;
+	    if(num1==num2){
+	       // sum=num1+num2;
+	        System.out.println(sum);
+	    }
+	    else{
+	        sum=sum*2;
+	        System.out.println(sum);
+	    }
+		// Implement your code here 
+	}
+}
+
