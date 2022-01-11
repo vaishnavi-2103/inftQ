@@ -1,0 +1,29 @@
+public class methods_average {
+float sum =0;
+float avg=0;
+
+    public float findaverage(int a, int b, int c){
+      sum=a+b+c;
+      avg=sum/3;
+      return avg;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    public static void main(String[]args){
+        pattern2 one=new pattern2();
+       one.findaverage(1,2,3);
+        System.out.println(one.avg);
+    }
+    }
+
